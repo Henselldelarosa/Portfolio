@@ -1,0 +1,50 @@
+.sidebar{
+  flex: 2;
+  height: 100%;
+  background-color: var(--primary_black);
+
+  &__img{
+    height: 35rem;
+    width: 30rem;
+    object-fit: cover;
+    margin-top: 5%;
+  }
+
+  .sidebar__icon{
+
+    &--linkedin{
+      color: var(--primary_lightB);
+      font-size: 3rem;
+    }
+
+    &--github{
+      color: black;
+      font-size: 3rem;
+    }
+
+    &--email{
+      color: green;
+      font-size: 3rem;
+    }
+
+    &--instagram{
+      color: var(--primary_pink);
+      font-size: 3rem;
+    }
+
+    &--facebook{
+      color: var(--primary_darkB);
+      font-size: 3rem;
+    }
+
+    &--phone{
+      color: var(--primary_lightB);
+      font-size: 3rem;
+    }
+  }
+
+  // .icon_linkedin{
+  //   color: var(--primary_lightB);
+  //   font-size: 2rem;
+  // }
+}

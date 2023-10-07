@@ -6,6 +6,8 @@ import LoginFormPage from "./components/LoginFormPage";
 import { authenticate } from "./store/session";
 import Navigation from "./components/Navigation";
 import './App.scss'
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,7 +18,14 @@ function App() {
 
   return (
     <div className="app">
-      hello
+
+      <Navbar/>
+      <Switch>
+
+        <Route path='/'>
+          <Home/>
+        </Route>
+      </Switch>
       {/* <Navigation isLoaded={isLoaded} />
       {isLoaded && ( */}
         {/* <Switch>

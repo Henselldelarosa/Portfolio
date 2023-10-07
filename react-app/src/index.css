@@ -1,3 +1,42 @@
-*{
+*,
+*::after,
+*::before{
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+  /* padding: 3rem; */
+}
+
+:root{
+  --primary_darkB: #0a2463;
+  --primary_lightB: #3e92cc;
+  --primary_white: #fffaff;
+  --primary_pink: #d8315b;
+  --primary_black: #1e1b18;
+}
+
+.github{
+  &:hover{
+    color: var(--primary_white);
+  }
+}
+
+.linkedin{
+  color: var(--primary_lightB);
+  &:hover{
+    color: var(--primary_white);
+  }
+}
+
+.icon_button{
+  background-color: transparent;
+  border: none;
 }
