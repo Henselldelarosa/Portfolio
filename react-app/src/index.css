@@ -40,3 +40,10 @@ body{
   background-color: transparent;
   border: none;
 }
+
+.link{
+  text-decoration: none;
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
